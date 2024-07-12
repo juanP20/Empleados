@@ -26,4 +26,5 @@ export class EmpleadoService {
   delete(idEmpleado:number):Observable<void>{
     return this.http.delete<void>(`${this.apiUrl}eliminar/${idEmpleado}`)
   }
+  
 }
